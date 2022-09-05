@@ -1,15 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="crt"></div>
+  <main-window></main-window>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import mainWindow from './components/mainWindow.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    mainWindow,
   }
 }
 </script>
@@ -22,5 +22,22 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: #010191;
 }
+
+.crt:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://static.doomworld.com/monthly_2019_05/scanlines.png.2859237ac5e64816bb01978e0707b2db.png');
+    background-repeat: repeat;
+    background-size: auto 100%;
+    background-position: center;
+    opacity: 0.4;
+}
+
+
 </style>
