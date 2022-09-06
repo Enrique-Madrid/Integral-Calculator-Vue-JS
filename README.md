@@ -1,4 +1,4 @@
-# aprendiendo-vue
+# Integral Calculator
 
 ## Project setup
 ```
